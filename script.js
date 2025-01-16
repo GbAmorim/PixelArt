@@ -100,7 +100,10 @@ const saveCanvas = () => {
 };
 
 resetButton.addEventListener("click", function () {
-    location.reload(); // Recarrega a página
+    setTimeout(() => {
+        location.reload();
+    }, 100);
+    location.reload();
 });
 
 canvas.addEventListener("mousedown", () => (isPainting = true));
